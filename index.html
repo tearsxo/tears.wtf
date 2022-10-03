@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>death.</title>
+    <link rel="shortcut icon" type="image/png" href="images/tears.png">
+    <meta property="og:title" content="death">
+    <meta property="og:description" content="serial killer">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/meteor.css">
+    <link href="css/animation.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        .interact {
+            background-color: black;
+            z-index: 10;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 10px;
+        }
+    </style>
+    <div class="interact" id="force-interaction">
+        <h3>click.</h3>
+    </div>
+    <audio loop preload="auto" id="audio">
+        <source src="deadinside.mp3">
+    </audio>
+    <script type="text/javascript">
+        $(document).ready(function (){
+            $('#force-interaction').click(function (){  
+                document.getElementById("force-interaction").removeChild(document.getElementById("force-interaction").children[0]); // Remove "Click here to enter ;)" before fade
+                document.getElementById("force-interaction").style.animation ="fadeout 1.5s normal forwards ease"; // Set animation CSS to fade interaction forcer
+                document.getElementById("force-interaction").remove()
+                let audio = document.getElementById("audio");
+                audio.volume = 0.3; // change vol
+                audio.play(); // Play background audio
+            });
+        });
+    </script>
+    <div class="container" style="display: block;">
+        <div class="row" style="display: block;">
+            <div class="col-md-12" style="display: block;">
+                <img class="img-responsive hanginggirl animated infinite swing nodrag" draggable="false" src="images/hang.png" style="display: block;">
+                <style type="text/css">* {cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym827.ani), url(images/oth704.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/11/29/bloody-knife.html" target="_blank" title="Bloody-knife.html"><img src="images/cursor.png" border="0" alt="" style="position:absolute; top: 0px; right: 0px;"></a>
+                <script> document.addEventListener('contextmenu', event => event.preventDefault()); document.onkeydown = function (e) { if (e.keyCode == 123) { return false; } if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { return false; } if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { return false; } if (e.ctrlKey && e.keyCode == 85) { return false; } }</script>
+                <script>
+                    function audioPlay() {
+                        var audio = document.getElementById("audio");
+                        audio.volume = 0.20;
+                        audio.play();
+                    }
+                </script>
+                <div class="bg-animation">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div id="stars4"></div>
+                </div>
+                <center>
+                    <h3>
+                        <p class="hover">
+                            <a href="https://tiktok.com/@pookietears" class="hover">serial</a> |
+                            <a href="https://www.instagram.com/v2dezl/" class="hover">killer</a>
+                        </p>
+                        <div class="row"></div>
+                        <center>
+                            <script type="css">
+                                body { overflow: hidden; /* Hide scrollbars */ } </body></html>
+                            </script>
+                        </center>
+                    </h3>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
